@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int no,i,j,n,no,k,s=0;
+	clrscr();
+	printf("Enter limit:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		s=0;
+		no=i;
+		while(no!=0)
+		{
+			k=no%10;
+			f=1;
+			for(j=k;j>=1;j--)
+			{
+				f=f*j;
+			}
+			s=s+f;
+			no=no/10;
+		}
+		if(s==i)
+			printf("\t%d",i);
+	}
+	getch();
+	return 0;
+}
