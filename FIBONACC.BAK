@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int fo=0,f1=1,f,a,n;
+	clrscr();
+	printf("Enter limit:");
+	scanf("%d",&n);
+	printf("\t%d\t%d",fo,f1);
+	a=2;
+	while(a<n)
+	{
+		f=fo+f1;
+		fo=f1;
+		f1=f;
+		printf("\t%d",f);
+		a++;
+	}
+	getch();
+	return 0;
+}
